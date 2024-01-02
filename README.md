@@ -15,6 +15,7 @@ catkin_make
 #After you have initial costmaps change back to local costmaps.
 #You can add the kidnapper.launch to your main launch file for it to work continously.
 #As long as it does not detect kidnapping, the main program will not work so CPU usage is respectively low
+
 <img width="410" alt="Real_world_position" src="https://github.com/AlpMercan/Where-AM-I/assets/112685013/9dbdffa2-be5c-41f6-a404-d8b6b5ef8e12">
 
 The real world position
