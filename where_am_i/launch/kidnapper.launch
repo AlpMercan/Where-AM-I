@@ -1,0 +1,7 @@
+<launch>
+  <!-- Start your custom localization node -->
+  <node name="imu_anomaly_detector" pkg="where_am_i" type="anomaly_detection.py" output="screen">
+
+  </node>
+</launch>
+
