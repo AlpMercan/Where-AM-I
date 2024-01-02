@@ -9,7 +9,7 @@ OpenCV Robot Relocalization: This project utilizes OpenCV and IMU data to addres
 2. git clone https://github.com/AlpMercan/Where-AM-I.git
 3. cd ~catkin_ws
 4. rosdep install --from-paths src --ignore-src -r
-5 catkin_make
+5. catkin_make
 # some configurations
 - Use the correct imu topic.
 - Change your map.yaml's origin to [0,0,0].
