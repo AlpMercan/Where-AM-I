@@ -1,20 +1,21 @@
 # Where-AM-I
 Open_CV based solution to kidnapped robot problem. It will detect kidnapping from IMU and the relocalize itself.
 # How to use it
-cd catkin_ws/src #wherever your main is
-git clone https://github.com/AlpMercan/Where-AM-I.git
-cd ~catkin_ws
-rosdep install --from-paths src --ignore-src -r
-catkin_make
-#some configurations
-#Use the correct imu topic
-#change your map.yaml's origin to [0,0,0]
-#the global costmap and local cost map should be in the same directory
-#first enter the The_kidnapper_Algorithm.py and change image path and template path to your respective position
-#from map class change the global cost map topic with its name and after work the system 2 times. 
-#After you have initial costmaps change back to local costmaps.
-#You can add the kidnapper.launch to your main launch file for it to work continously.
-#As long as it does not detect kidnapping, the main program will not work so CPU usage is respectively low
+1. cd catkin_ws/src #wherever your main is
+
+2. git clone https://github.com/AlpMercan/Where-AM-I.git
+3. cd ~catkin_ws
+4. rosdep install --from-paths src --ignore-src -r
+5 catkin_make
+# some configurations
+- Use the correct imu topic.
+- Change your map.yaml's origin to [0,0,0].
+- The global costmap and local cost map should be in the same directory
+- First enter the The_kidnapper_Algorithm.py and change image path and template path to your respective position
+- From map class change the global cost map topic with its name and after work the system 2 times. 
+- After you have initial costmaps change back to local costmaps.
+- You can add the kidnapper.launch to your main launch file for it to work continously.
+- As long as it does not detect kidnapping, the main program will not work so CPU usage is respectively low
 
 <img width="410" alt="Real_world_position" src="https://github.com/AlpMercan/Where-AM-I/assets/112685013/9dbdffa2-be5c-41f6-a404-d8b6b5ef8e12">
 
