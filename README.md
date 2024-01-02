@@ -16,10 +16,17 @@ catkin_make
 #You can add the kidnapper.launch to your main launch file for it to work continously.
 #As long as it does not detect kidnapping, the main program will not work so CPU usage is respectively low
 <img width="410" alt="Real_world_position" src="https://github.com/AlpMercan/Where-AM-I/assets/112685013/9dbdffa2-be5c-41f6-a404-d8b6b5ef8e12">
+
 The real world position
+
 <img width="419" alt="Initial_AMCL_Position" src="https://github.com/AlpMercan/Where-AM-I/assets/112685013/39691656-8e26-4f2d-ba38-d329e0c07635">
+
 Rviz initial condition
+
 ![Position_detection](https://github.com/AlpMercan/Where-AM-I/assets/112685013/dc6689fb-72ef-4835-ab7a-91f015fff501)
+
 The localition finder
+
 <img width="380" alt="Relocalization" src="https://github.com/AlpMercan/Where-AM-I/assets/112685013/b59f3118-2257-4ce2-bf6a-9cdede504c8e">
+
 relocalized position
