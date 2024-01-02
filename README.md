@@ -1,7 +1,7 @@
 # Where-AM-I
 OpenCV Robot Relocalization: This project utilizes OpenCV and IMU data to address the 'kidnapped robot' problem. It features two key components: 
 1. Kidnapping Detection, which uses IMU data to identify unexpected movements suggesting the robot has been moved
-2. Relocalization, employing OpenCV for visual SLAM to reorient the robot in its new environment. The approach combines threshold-based 
+2. Relocalization, employing OpenCV for template matching to reorient the robot in its new environment using lidar costmaps. The approach combines threshold-based 
 - IMU analysis with feature detection and mapping, offering a robust solution for autonomous reorientation after displacement.
 # How to use it
 1. cd catkin_ws/src #wherever your main is
