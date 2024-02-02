@@ -39,12 +39,12 @@ class Matching:
 
     @staticmethod
     def pixel_to_map_conversion(pixel_x, pixel_y):
-        return -pixel_x * 0.05, -pixel_y * 0.05  # pixel to real life measurement (resolution)
+        return -pixel_x * 0.05, -pixel_y * 0.05  
     
     @staticmethod
     def publish_initial_pose(x, y, theta):
         initial_pose_pub = rospy.Publisher('initialpose', geometry_msgs.msg.PoseWithCovarianceStamped, queue_size=10)
-        rospy.sleep(1)  # Give time for the publisher to set up
+        rospy.sleep(1)  
 
         initial_pose = geometry_msgs.msg.PoseWithCovarianceStamped()
         initial_pose.header.stamp = rospy.Time.now()
@@ -88,12 +88,12 @@ class Matching:
             center_y = abs((-center_y1))*0.05
             bottom_right = (top_left[0] + width, top_left[1] + height)
 
-            # Publish the transform and initial pose
+            
             #publish_transform(center_x, center_y)
             Matching.publish_initial_pose(center_x, center_y, 0)  
             cv2.rectangle(bg_copy, top_left, bottom_right, 255, 10)
 
-        # Plot the Images for debugging reason, you can delete it if you want
+       
             plt.subplot(121)
             plt.imshow(result)
             plt.title("Result of Template Matching or photo matching")
@@ -108,17 +108,17 @@ class Map:
     @staticmethod
     def map_value_to_color(value):
         if value == -1:
-        # Unknown or unexplored
-            return (128, 128, 128)  # Gray
+        
+            return (128, 128, 128)  
         elif value <= 30:
-        # Free space (0-30)
-            return (255, 255, 255)  # White
+        
+            return (255, 255, 255)  
         elif value <= 70:
-            # Unknown space (30-70)
-            return (0, 0, 255)  # Red
+            
+            return (0, 0, 255)
         else:
-        # Occupied space (70-100)
-            return (0, 255, 0)  # Green
+        
+            return (0, 255, 0)  
     @staticmethod
     def callback(data):
     
