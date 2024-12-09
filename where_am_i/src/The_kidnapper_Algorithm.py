@@ -129,7 +129,7 @@ class Map:
         color_image = np.array([Map.map_value_to_color(val) for val in data_array.flat], dtype=np.uint8).reshape((height, width, 3))
 
     
-        cv2.imwrite("/home/alp/catkin_ws/src/nerdeyim/turtlebot3/where_am_i/src/local_colored.png", color_image)######### change it to your folder
+        cv2.imwrite("/home/alp/catkin_ws/src/Where-AM-I/where_am_i/src/local_colored.png", color_image)######### change it to your folder
         
         #rospy.sleep(5)
 
@@ -146,8 +146,8 @@ if __name__ == '__main__':
     listener_thread.start()
     #to ensure that local costmap is written
     rospy.sleep(1)
-    image_path = "/home/alp/catkin_ws/src/nerdeyim/turtlebot3/where_am_i/src/GLOBAL.png" ######### change it to your folder
-    template_path = "/home/alp/catkin_ws/src/nerdeyim/turtlebot3/where_am_i/src/local_colored.png" ######### change it to your folder
+    image_path = "/home/alp/catkin_ws/src/Where-AM-I/where_am_i/src/GLOBAL.png" ######### change it to your folder
+    template_path = "/home/alp/catkin_ws/src/Where-AM-I/where_am_i/src/local_colored.png" ######### change it to your folder
     Localization = Matching()
     #Map.listener()
 

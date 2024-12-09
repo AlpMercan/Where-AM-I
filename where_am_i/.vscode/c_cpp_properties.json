@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "ROS",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/noetic/include/**",
+                "/usr/include/**",
+                "/usr/local/include/**",
+                "/usr/include/opencv4/**",
+                "/usr/local/include/opencv4/**",
+                "/opt/ros/noetic/include/tf2/**",
+                "/opt/ros/noetic/include/tf2_ros/**",
+                "/opt/ros/noetic/include/geometry_msgs/**",
+                "/opt/ros/noetic/include/nav_msgs/**",
+                "/usr/include/eigen3/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
